@@ -4,7 +4,7 @@ import * as CS from "../../../Styles/commonStyles";
 const BestItemsCardTitle = ({ title }) => {
   return (
     <S.BestItemsCardTitle>
-      <CS.Card.CardTitle>{title}</CS.Card.CardTitle>
+      <CS.ColorFont.GRAY1_S_NORMAL>{title}</CS.ColorFont.GRAY1_S_NORMAL>
     </S.BestItemsCardTitle>
   );
 };

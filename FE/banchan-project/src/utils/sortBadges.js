@@ -1,14 +1,23 @@
-import { Card } from "../Styles/commonStyles";
+import * as CS from "../Styles/commonStyles";
 
 const sortBadge = (badge, index) => {
-	switch (badge) {
-		case "이벤트특가":
-			return <Card.CardEventBadge key={index}>{badge}</Card.CardEventBadge>;
-		case "론칭특가":
-			return <Card.CardLaunchingBadge key={index}>{badge}</Card.CardLaunchingBadge>;
-		default:
-			return;
-	}
+  const badgeText = (
+    <CS.ColorFont.WHITE_XS_BOLD>{badge}</CS.ColorFont.WHITE_XS_BOLD>
+  );
+  switch (badge) {
+    case "이벤트특가":
+      return (
+        <CS.Badges.EventBadge key={index}>{badgeText}</CS.Badges.EventBadge>
+      );
+    case "론칭특가":
+      return (
+        <CS.Badges.LaunchingBadge key={index}>
+          {badgeText}
+        </CS.Badges.LaunchingBadge>
+      );
+    default:
+      return;
+  }
 };
 
-export default sortBadge
+export default sortBadge;

@@ -26,6 +26,7 @@ const Logo = styled.div`
   /* Gray 1 */
 
   color: #333333;
+  cursor: pointer;
 `;
 
 const MenuList = styled.li`
@@ -58,6 +59,7 @@ const MenuWrapper = styled.div`
 `;
 
 const Navigator = styled.div`
+  cursor: pointer;
   position: relative;
 `;
 
@@ -119,6 +121,7 @@ const SearchButton = styled(SearchButtonSvg)`
   position: absolute;
   right: 10px;
   top: 5px;
+  cursor: pointer;
 `;
 
 const SearchInput = styled.input`
@@ -142,6 +145,7 @@ const Login = styled.span`
   /* Gray 1 */
 
   color: #333333;
+  cursor: pointer;
 `;
 
 const ShoppingCart = styled.span`
@@ -154,6 +158,7 @@ const ShoppingCart = styled.span`
   /* Gray 1 */
 
   color: #333333;
+  cursor: pointer;
 `;
 export {
   Header,

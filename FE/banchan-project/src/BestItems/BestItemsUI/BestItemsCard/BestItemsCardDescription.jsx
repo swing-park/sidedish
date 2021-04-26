@@ -2,9 +2,9 @@ import * as S from "../../BestItemsStyles";
 import * as CS from "../../../Styles/commonStyles";
 const BestItemsCardDescription = ({ description }) => {
   return (
-    <S.BestItemsCardDescription>
-      <CS.Card.CardDescription> {description}</CS.Card.CardDescription>
-    </S.BestItemsCardDescription>
+    <>
+      <CS.ColorFont.GRAY3_XS_NORMAL>{description}</CS.ColorFont.GRAY3_XS_NORMAL>
+    </>
   );
 };
 

@@ -1,11 +1,7 @@
-import { Card } from "../../../Styles/commonStyles";
+import * as CS from "../../../Styles/commonStyles";
 
 const DeliveryTitle = ({ title }) => {
-  return (
-    <Card.CardDescription fontSize={16} lineHeight={23}>
-      {title}
-    </Card.CardDescription>
-  );
+  return <CS.ColorFont.GRAY3_S_NORMAL>{title}</CS.ColorFont.GRAY3_S_NORMAL>;
 };
 
 export default DeliveryTitle;

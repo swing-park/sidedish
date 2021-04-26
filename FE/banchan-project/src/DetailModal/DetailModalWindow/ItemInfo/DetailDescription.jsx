@@ -1,10 +1,10 @@
-import { Card } from "../../../Styles/commonStyles";
+import * as CS from "../../../Styles/commonStyles";
 
 const DetailDescription = ({ detailDescription }) => {
   return (
-    <Card.CardDescription fontSize={18} lineHeight={26}>
+    <CS.ColorFont.GRAY3_M_NORMAL>
       {detailDescription}
-    </Card.CardDescription>
+    </CS.ColorFont.GRAY3_M_NORMAL>
   );
 };
 

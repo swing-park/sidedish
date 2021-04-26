@@ -11,30 +11,29 @@ const UpButton = styled(upButtonSvg)``;
 const DownButton = styled(downButtonSvg)``;
 
 const ImageBox = styled.img`
-    border-radius: 5px;
-`,
-
+  border-radius: 5px;
+`;
 const Image = {
-  THUMB_NAILS : styled(ImageBox)`
-    width:${theme.imgSizes.THUMB_NAILS};
-    height:${theme.imgSizes.THUMB_NAILS};
+  THUMB_NAILS: styled(ImageBox)`
+    width: ${theme.imgSizes.THUMB_NAILS};
+    height: ${theme.imgSizes.THUMB_NAILS};
   `,
-  RECOMMENDED : styled(ImageBox)`
-    width:${theme.imgSizes.RECOMMENDED};
-    height:${theme.imgSizes.RECOMMENDED};
+  RECOMMENDED: styled(ImageBox)`
+    width: ${theme.imgSizes.RECOMMENDED};
+    height: ${theme.imgSizes.RECOMMENDED};
   `,
-  MAIN_ITEMS : styled(ImageBox)`
-    width:${theme.imgSizes.MAIN_ITEMS};
-    height:${theme.imgSizes.MAIN_ITEMS};
+  MAIN_ITEMS: styled(ImageBox)`
+    width: ${theme.imgSizes.MAIN_ITEMS};
+    height: ${theme.imgSizes.MAIN_ITEMS};
   `,
-  BEST_ITEMS : styled(ImageBox)`
-    width:${theme.imgSizes.BEST_ITEMS};
-    height:${theme.imgSizes.BEST_ITEMS};
+  BEST_ITEMS: styled(ImageBox)`
+    width: ${theme.imgSizes.BEST_ITEMS};
+    height: ${theme.imgSizes.BEST_ITEMS};
   `,
-  DETAIL_MAIN : styled(ImageBox)`
-    width:${theme.imgSizes.DETAIL_MAIN};
-    height:${theme.imgSizes.DETAIL_MAIN};
-  `
+  DETAIL_MAIN: styled(ImageBox)`
+    width: ${theme.imgSizes.DETAIL_MAIN};
+    height: ${theme.imgSizes.DETAIL_MAIN};
+  `,
 };
 
 const NormalFont = styled.div`
@@ -49,155 +48,189 @@ const BoldFont = styled.div`
 `;
 
 const Font = {
-  XS_NORMAL : styled(NormalFont)`
-    font-size : ${theme.fontSizes.XS}px;
-    line-height : ${theme.lineHeights.XS}px;
+  XS_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.XS};
+    line-height: ${theme.lineHeights.XS};
   `,
-  S_NORMAL : styled(NormalFont)`
-  font-size : ${theme.fontSizes.S}px;
-    line-height : ${theme.lineHeights.S}px;
+  S_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.S};
+    line-height: ${theme.lineHeights.S};
   `,
-  M_NORMAL : styled(NormalFont)`
-  font-size : ${theme.fontSizes.M}px;
-    line-height : ${theme.lineHeights.M}px;
+  M_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.M};
+    line-height: ${theme.lineHeights.M};
   `,
-  L_NORMAL : styled(NormalFont)`
-  font-size : ${theme.fontSizes.L}px;
-    line-height : ${theme.lineHeights.L}px;
+  L_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.L};
+    line-height: ${theme.lineHeights.L};
   `,
-  XL_NORMAL : styled(NormalFont)`
-  font-size : ${theme.fontSizes.XL}px;
-    line-height : ${theme.lineHeights.XL}px;
+  XL_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.XL};
+    line-height: ${theme.lineHeights.XL};
   `,
-  XXL_NORMAL : styled(NormalFont)`
-  font-size : ${theme.fontSizes.XXL}px;
-  line-height : ${theme.lineHeights.XXL}px;
+  XXL_NORMAL: styled(NormalFont)`
+    font-size: ${theme.fontSizes.XXL};
+    line-height: ${theme.lineHeights.XXL};
   `,
 
-  XS_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.XS}px;
-    line-height : ${theme.lineHeights.XS}px;
+  XS_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.XS};
+    line-height: ${theme.lineHeights.XS};
   `,
-  S_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.S}px;
-    line-height : ${theme.lineHeights.S}px;
+  S_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.S};
+    line-height: ${theme.lineHeights.S};
   `,
-  M_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.M}px;
-    line-height : ${theme.lineHeights.M}px;
+  M_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.M};
+    line-height: ${theme.lineHeights.M};
   `,
-  L_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.L}px;
-    line-height : ${theme.lineHeights.L}px;
+  L_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.L};
+    line-height: ${theme.lineHeights.L};
   `,
-  XL_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.XL}px;
-    line-height : ${theme.lineHeights.XL}px;
+  XL_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.XL};
+    line-height: ${theme.lineHeights.XL};
   `,
-  XXL_BOLD : styled(BoldFont)`
-  font-size : ${theme.fontSizes.XXL}px;
-  line-height : ${theme.lineHeights.XXL}px;
+  XXL_BOLD: styled(BoldFont)`
+    font-size: ${theme.fontSizes.XXL};
+    line-height: ${theme.lineHeights.XXL};
   `,
 };
 
 const ColorFont = {
-  GRAY1_XS_NORMAL : styled(Font.XS_NORMAL)`
-    color : ${theme.fontColors.GRAY1};
+  GRAY1_XS_NORMAL: styled(Font.XS_NORMAL)`
+    color: ${theme.fontColors.GRAY1};
   `,
-  GRAY1_XS_BOLD : styled(Font.XS_BOLD)`
-    color : ${theme.fontColors.GRAY1};
+  GRAY1_XS_BOLD: styled(Font.XS_BOLD)`
+    color: ${theme.fontColors.GRAY1};
   `,
-  GRAY1_S_NORMAL : styled(Font.S_NORMAL)`
-    color : ${theme.fontColors.GRAY1};
+  GRAY1_S_NORMAL: styled(Font.S_NORMAL)`
+    color: ${theme.fontColors.GRAY1};
   `,
-  GRAY1_S_BOLD : styled(Font.S_BOLD)`
-    color : ${theme.fontColors.GRAY1};
+  GRAY1_S_BOLD: styled(Font.S_BOLD)`
+    color: ${theme.fontColors.GRAY1};
   `,
-  GRAY1_M_BOLD : styled(Font.M_BOLD)`
-    color : ${theme.fontColors.GRAY1};
+  GRAY1_M_BOLD: styled(Font.M_BOLD)`
+    color: ${theme.fontColors.GRAY1};
   `,
-  GRAY1_XL_BOLD : styled(Font.XL_BOLD)`
-    color : ${theme.fontColors.GRAY1};
-  `,
-  
-
-  GRAY2_S_NORMAL : styled(Font.S_NORMAL)`
-    color : ${theme.fontColors.GRAY2};
-  `,
-  GRAY2_S_BOLD : styled(Font.S_BOLD)`
-    color : ${theme.fontColors.GRAY2};
+  GRAY1_XL_BOLD: styled(Font.XL_BOLD)`
+    color: ${theme.fontColors.GRAY1};
   `,
 
-
-  GRAY3_XS_NORMAL : styled(Font.XS_NORMAL)`
-    color : ${theme.fontColors.GRAY3};
+  GRAY2_S_NORMAL: styled(Font.S_NORMAL)`
+    color: ${theme.fontColors.GRAY2};
   `,
-  GRAY3_S_NORMAL : styled(Font.S_NORMAL)`
-    color : ${theme.fontColors.GRAY3};
+  GRAY2_S_BOLD: styled(Font.S_BOLD)`
+    color: ${theme.fontColors.GRAY2};
+  `,
+
+  GRAY3_XS_NORMAL: styled(Font.XS_NORMAL)`
+    color: ${theme.fontColors.GRAY3};
+  `,
+  GRAY3_S_NORMAL: styled(Font.S_NORMAL)`
+    color: ${theme.fontColors.GRAY3};
   `,
   GRAY3_M_NORMAL: styled(Font.M_NORMAL)`
-    color : ${theme.fontColors.GRAY3};
+    color: ${theme.fontColors.GRAY3};
   `,
-  GRAY3_M_BOLD : styled(Font.M_BOLD)`
-    color : ${theme.fontColors.GRAY3};
-  `,
-
-
-  GRAY4_XS_NORMAL : styled(Font.XS_NORMAL)`
-    color : ${theme.fontColors.GRAY4};
+  GRAY3_M_BOLD: styled(Font.M_BOLD)`
+    color: ${theme.fontColors.GRAY3};
   `,
 
+  GRAY4_XS_NORMAL: styled(Font.XS_NORMAL)`
+    color: ${theme.fontColors.GRAY4};
+  `,
 
   BLACK_L_BOLD: styled(Font.L_BOLD)`
-    color : ${theme.fontColors.BLACK};
+    color: ${theme.fontColors.BLACK};
   `,
-  BLACK_XXL_BOLD : styled(Font.XXL_BOLD)`
-    color : ${theme.fontColors.BLACK};
+  BLACK_XXL_BOLD: styled(Font.XXL_BOLD)`
+    color: ${theme.fontColors.BLACK};
   `,
 
-
-  WHITE_XS_BOLD : styled(Font.XS_BOLD)`
-    color : ${theme.fontColors.WHITE};
+  WHITE_XS_BOLD: styled(Font.XS_BOLD)`
+    color: ${theme.fontColors.WHITE};
   `,
-  WHITE_M_BOLD : styled(Font.M_BOLD)`
-    color : ${theme.fontColors.WHITE};
+  WHITE_M_BOLD: styled(Font.M_BOLD)`
+    color: ${theme.fontColors.WHITE};
   `,
-  WHITE_XL_BOLD : styled(Font.XL_BOLD)`
-    color : ${theme.fontColors.WHITE};
+  WHITE_XL_BOLD: styled(Font.XL_BOLD)`
+    color: ${theme.fontColors.WHITE};
   `,
-};  
+};
 
 const BadgeBox = styled.div`
-width: 97px;
-height: 28px;
-display: flex;
-justify-content: center;
-padding: 4px 16px;
-margin-right: 8px;
-border-radius: 5px;
+  display: inline-block;
+  width: 97px;
+  height: 28px;
+  padding: 4px 16px;
+  margin-right: 8px;
+  border-radius: 5px;
+  text-align: center;
 `;
 
 const Badges = {
-  EventBadge : styled(BadgeBox)`
-  background: #82d32d;
-`,
+  EventBadge: styled(BadgeBox)`
+    background: ${theme.boxColors.GREEN};
+  `,
 
-LaunchingBadge: styled(BadgeBox)`
-    background: #86c6ff;
+  LaunchingBadge: styled(BadgeBox)`
+    background: ${theme.boxColors.LIGHT_BLUE};
   `,
 };
+
+const Hover = styled.div`
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    #f5f5f7;
+  border-radius: 5px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+`;
 
 const Box = {
-  FLEX_BOX : styled.div`
-    display:flex;
+  HOVER_BOX_BEST: styled(Hover)`
+    position: absolute;
+    width: 384px;
+    height: 384px;
   `,
-  FLEX_CENTER_BOX : styled.div`
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+
+  HOVER_BOX_MAIN: styled(Hover)`
+    width: 308px;
+    height: 308px;
   `,
-  FLEX_BOX : styled.div`
-  
+
+  HOVER_LINE: styled.div`
+    /* line */
+
+    position: static;
+    width: 89px;
+    height: 1px;
+    left: 0px;
+    top: 51px;
+    background: #ffffff;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
   `,
+
+  FLEX_BOX: styled.div`
+    display: flex;
+  `,
+  FLEX_CENTER_BOX: styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `,
+  FLEX_BOX: styled.div``,
 };
 
+export { Image, Font, ColorFont, Badges, Box };

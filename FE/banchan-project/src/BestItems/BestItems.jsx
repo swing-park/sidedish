@@ -4,7 +4,8 @@ import BestItemsTitle from "./BestItemsTitle";
 import BestItemsTab from "./BestItemsUI/BestItemsTab/BestItemsTab";
 import BestItemsCardWrapper from "./BestItemsUI/BestItemsCardWrapper";
 
-const URL = "https://c022c734-76a1-4d17-a2e6-5373a7e43886.mock.pstmn.io/best"; //백엔드 데이터
+const URL =
+  "https://c022c734-76a1-4d17-a2e6-5373a7e43886.mock.pstmn.io/dish/best"; //백엔드 데이터
 const BestItems = () => {
   const [titleList, setTitleList] = useState([]);
   const [initialTabData, setInitialTabData] = useState({});
@@ -34,6 +35,8 @@ const BestItems = () => {
       setInitialTabData(res);
     });
   }, []);
+
+  // if (!initialTabData) return null;
 
   return (
     <S.BestItems>

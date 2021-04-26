@@ -3,7 +3,7 @@ import * as CS from "../../../Styles/commonStyles";
 const BestItemsCardSPrice = ({ s_price }) => {
   return (
     <S.BestItemsCardSPrice>
-      <CS.Card.CardSPrice>{s_price}</CS.Card.CardSPrice>
+      <CS.ColorFont.BLACK_L_BOLD>{s_price}</CS.ColorFont.BLACK_L_BOLD>
     </S.BestItemsCardSPrice>
   );
 };

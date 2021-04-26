@@ -8,17 +8,7 @@ import BestItemsCardNPrice from "./BestItemsCardNPrice";
 import BestItemsCardSPrice from "./BestItemsCardSPrice";
 
 const BestItemsCard = ({ item }) => {
-  console.log(item);
-  const {
-    id,
-    image,
-    title,
-    description,
-    s_price,
-    n_price,
-    badge,
-    dish_category,
-  } = { ...item };
+  const { id, image, title, description, s_price, n_price, badge } = item;
 
   return (
     <S.BestItemsCard id={id}>

@@ -1,13 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import * as S from "../../BestItemsStyles";
 
 const BestItemsTabTitle = ({ titleList }) => {
-  // 선택된 탭 색깔 바꿔야함..분리 필요할듯 마우스 오버시 setstate로 타겟의 색깔 바꾸도록
+  const [activeTabId, setActivateTabId] = useState(1);
+  const onClick = e => {
+    setActivateTabId(+e.target.id); //id숫자로 바꾸기
+    //fetch 해야함
+  };
+
+  const isActive = tabId => {
+    return activeTabId === tabId;
+  };
+
   return (
     <S.BestItemsTabTitle>
       {titleList.map((title, idx) => {
         return (
-          <S.BestItemsTabTitleList key={idx} id={idx + 1}>
+          <S.BestItemsTabTitleList
+            active={isActive(idx + 1)}
+            key={idx}
+            id={idx + 1}
+            onClick={onClick}
+          >
             {title}
           </S.BestItemsTabTitleList>
         );

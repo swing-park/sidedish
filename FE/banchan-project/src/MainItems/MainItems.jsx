@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import MainItemsTitle from "./MainItemsTitle";
-import MainItemsCard from "./MainItemsCard/MainItemsCard";
+import CategoryItemsTitle from "./MainItemsTitle";
+import CategoryItemsCard from "./MainItemsCard/MainItemsCard";
 import TotalCategoryButton from "./TotalCategoryButton";
 import * as S from "./MainItemsStyles";
 import * as CS from "../Styles/commonStyles";
 
-const MainItems = (props) => {
+const MainItems = props => {
   const [mainDishData, setMainDishData] = useState(null);
   const [soupDishData, setSoupDishData] = useState(null);
   const [sideDishData, setSideDishData] = useState(null);
@@ -13,16 +13,19 @@ const MainItems = (props) => {
   const [error, setError] = useState(false);
 
   const URL = {
-    MAINDISH: "/dish/main",
-    SOUPDISH: "/dish/soup",
-    SIDEDISH: "/dish/side",
+    MAINDISH:
+      "http://ec2-15-164-123-251.ap-northeast-2.compute.amazonaws.com:8080/dish/main",
+    SOUPDISH:
+      "http://ec2-15-164-123-251.ap-northeast-2.compute.amazonaws.com:8080/dish/soup",
+    SIDEDISH:
+      "http://ec2-15-164-123-251.ap-northeast-2.compute.amazonaws.com:8080/dish/side",
   };
 
   const getData = (url, setFn) => {
     try {
       fetch(url)
-        .then(res => res.json())
-        .then(json => {
+        .then((res) => res.json())
+        .then((json) => {
           if (json) {
             setFn(json);
           }
@@ -49,28 +52,28 @@ const MainItems = (props) => {
     getData(URL.MAINDISH, setMainDishData);
   }, []);
 
-  const Category = (categoryData) => {
+  const Category = categoryData => {
     if (categoryData === null) return null;
 
     return (
-      <S.MainItemsWrapper>
-        <MainItemsTitle categoryTitle={categoryData.dish_category_name} />
-        <S.MainItemsCardScrollWrapper>
-          <S.LeftButtonWrapper>
+      <S.CategoryItemsWrapper>
+        <CategoryItemsTitle categoryTitle={categoryData.dish_category_name} />
+        <S.CategoryItemsCardScrollWrapper>
+          <S.CategoryLeftButtonWrapper>
             <CS.Button.LEFT_BUTTON />
-          </S.LeftButtonWrapper>
+          </S.CategoryLeftButtonWrapper>
           {categoryData.items.map((item, index) => (
-            <MainItemsCard
+            <CategoryItemsCard
               key={index}
               item={item}
               handleClickCard={props.handleClickCard}
             />
           ))}
-          <S.RightButtonWrapper>
+          <S.CategoryRightButtonWrapper>
             <CS.Button.RIGHT_BUTTON />
-          </S.RightButtonWrapper>
-        </S.MainItemsCardScrollWrapper>
-      </S.MainItemsWrapper>
+          </S.CategoryRightButtonWrapper>
+        </S.CategoryItemsCardScrollWrapper>
+      </S.CategoryItemsWrapper>
     );
   };
 

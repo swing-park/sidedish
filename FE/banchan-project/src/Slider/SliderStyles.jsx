@@ -1,34 +1,44 @@
 import styled from "styled-components";
 
-const SliderCardWrapper = styled.div`
-  outline: red solid;
+const Slider = styled.div`
   position: relative;
+  width: ${(props) => props.sliderWidth}px;
+`;
+
+const SliderViewer = styled.div`
   overflow: hidden;
-  margin-top: 4px;
-  width: 1250px;
-  height: 500px;
-  padding: 0px;
 `;
 
-const SliderCard = styled.li`
-  background-color: #939351;
-  height: 400px;
-  width: 400px;
-  margin: 8px;
-`;
-const SliderCardList = styled.ul`
-  position: absolute;
-  outline: blue solid;
-  width: 2000px;
-  height: 500px;
+const SliderScrollBox = styled.div`
   display: flex;
-  justify-content: space-space-between;
-  align-items: center;
+
+  width: ${(props) => props.scrollBoxWidth}px;
+  transform: translate3d(${(props) => props.X}px, 0, 0);
+  transition: ${(props) => props.transition};
 `;
 
-const Style = {
-  SliderCardWrapper,
-  SliderCard,
-  SliderCardList,
+const LeftButtonWrapper = styled.button`
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  background: none;
+  cursor: pointer;
+  opacity: ${(props) => props._opacity};
+`;
+
+const RightButtonWrapper = styled.button`
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  background: none;
+  cursor: pointer;
+  opacity: ${(props) => props._opacity};
+`;
+
+export {
+  Slider,
+  SliderViewer,
+  SliderScrollBox,
+  LeftButtonWrapper,
+  RightButtonWrapper,
 };
-export { Style };

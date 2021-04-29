@@ -1,19 +1,44 @@
-import SliderCardWrapper from "./SliderCard/SliderCardWrapper";
-import SliderButtons from "./SliderButtons/SliderButtons";
+import { useState } from "react";
+import SliderScrollBox from "./SliderScrollBox";
+import SliderButtons from "./SliderButtons";
+import * as S from "./SliderStyles";
 
-// const customStyle = {
-//   cardWidth: "200px",
-//   cardCount: "4",
-//   transitionDefault: "all .5s",
-//   buttonWidth: "3px",
-// };
+const Slider = ({
+  sliderWidth,
+  cardWidth,
+  cardShown,
+  totalCardCount,
+  transition,
+  cards,
+  leftButton,
+  rightButton,
+  optionalFn,
+}) => {
+  const [X, setX] = useState(0);
+  const [rightRemainingCards, setRightRemainingCards] = useState(
+    totalCardCount - cardShown
+  );
+  const [leftRemainingCards, setLeftRemainingCards] = useState(0);
+  const scrollBoxWidth = cardWidth * totalCardCount;
 
-const Slider = ({ card, leftButton, rightButton }) => {
   return (
-    <>
-      <SliderCardWrapper {...{ card }}></SliderCardWrapper>
-      <SliderButtons {...{ leftButton, rightButton }}></SliderButtons>
-    </>
+    <S.Slider sliderWidth={sliderWidth}>
+      <SliderScrollBox {...{ scrollBoxWidth, transition, cards, X }} />
+      <SliderButtons
+        {...{
+          cardWidth,
+          cardShown,
+          leftButton,
+          rightButton,
+          setX,
+          rightRemainingCards,
+          setRightRemainingCards,
+          leftRemainingCards,
+          setLeftRemainingCards,
+          optionalFn,
+        }}
+      />
+    </S.Slider>
   );
 };
 

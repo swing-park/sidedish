@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import * as CS from "../Styles/commonStyles";
-import theme from "../Styles/theme";
+import * as CS from "@/Styles/commonStyles";
+import theme from "@/Styles/theme";
 
 const TotalCategoryButton = styled.button`
   position: absolute;

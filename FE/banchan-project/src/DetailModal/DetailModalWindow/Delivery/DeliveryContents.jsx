@@ -1,5 +1,5 @@
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const DeliveryContents = ({ contents, deliveryDescription }) => {
   let content;

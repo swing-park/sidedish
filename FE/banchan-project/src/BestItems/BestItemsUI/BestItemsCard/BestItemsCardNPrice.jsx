@@ -1,5 +1,6 @@
 import * as S from "../../BestItemsStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
+
 const BestItemsCardNPrice = ({ s_price, n_price }) => {
   return (
     n_price !== s_price && (

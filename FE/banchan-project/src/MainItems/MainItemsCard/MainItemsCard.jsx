@@ -5,7 +5,7 @@ import CardNPrice from "./MainItemsCardNPrice";
 import CardSPrice from "./MainItemsCardSPrice";
 import CardBadge from "./MainItemsCardBadge";
 import * as S from "../MainItemsStyles";
-import * as CS from "../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const MainItemsCard = ({ item, handleClickCard }) => {
   return (

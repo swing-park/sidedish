@@ -1,8 +1,8 @@
 import RecommendedItemsCardImage from "./RecommendedItemsCardImage";
 import RecommendedItemsCardTitle from "./RecommendedItemsCardTitle";
 import RecommendedItemsCardPrice from "./RecommendedItemsCardPrice";
-import Slider from "../../../../Slider/Slider";
-import * as CS from "../../../../Styles/commonStyles";
+import Slider from "@/Slider/Slider";
+import * as CS from "@/Styles/commonStyles";
 
 const RecommendedItemsCard = ({ recommended, handleClickCard, optionalFn }) => {
   const cards = recommended.map((item, index) => (

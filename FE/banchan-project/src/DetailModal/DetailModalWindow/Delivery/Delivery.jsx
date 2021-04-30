@@ -1,7 +1,7 @@
 import DeliveryTitle from "./DeliveryTitle";
 import DeliveryContents from "./DeliveryContents";
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const Delivery = ({ data }) => {
   return (

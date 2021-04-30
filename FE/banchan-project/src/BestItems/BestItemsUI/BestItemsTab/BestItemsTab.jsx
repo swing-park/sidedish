@@ -1,4 +1,4 @@
-import BestItemsTabTitle from "../BestItemsTab/BestItemsTabTitle";
+import BestItemsTabTitle from "./BestItemsTabTitle";
 
 const BestItemsTab = ({ titleList, setBestItemsData, URL }) => {
   return (

@@ -1,5 +1,5 @@
 import * as S from "./BestItemsStyles";
-import * as CS from "../Styles/commonStyles.jsx";
+import * as CS from "@/Styles/commonStyles";
 
 const BestItemsTitle = () => {
   return (

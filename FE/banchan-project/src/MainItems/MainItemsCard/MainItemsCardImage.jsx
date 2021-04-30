@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MainItemsHover from "../MainItemsHoverCard/MainItemsHover";
 import * as S from "../MainItemsStyles";
-import * as CS from "../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const MainItemsCardImage = ({
   image,

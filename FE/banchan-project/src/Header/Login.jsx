@@ -1,5 +1,5 @@
 import * as S from "./HeaderStyles";
-import { ColorFont } from "../Styles/commonStyles";
+import { ColorFont } from "@/Styles/commonStyles";
 
 const Login = () => {
   return (

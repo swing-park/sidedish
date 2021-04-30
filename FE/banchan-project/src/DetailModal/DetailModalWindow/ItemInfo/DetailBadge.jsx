@@ -1,4 +1,4 @@
-import sortBadge from "../../../utils/sortBadges";
+import sortBadge from "@/utils/sortBadges";
 
 const DetailBadge = ({ detailBadge }) => {
   return detailBadge.length === 0

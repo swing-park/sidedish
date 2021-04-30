@@ -1,5 +1,5 @@
-import sortBadge from "../../utils/sortBadges";
-import * as CS from "../../Styles/commonStyles";
+import sortBadge from "@/utils/sortBadges";
+import * as CS from "@/Styles/commonStyles";
 
 const MainItemsCardBadge = ({ badge }) => {
   return badge.length === 0 ? null : (

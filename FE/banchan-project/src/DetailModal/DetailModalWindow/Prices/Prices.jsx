@@ -13,6 +13,7 @@ const Prices = (props) => {
       <SubmitButton
         count={props.count}
         item_id={props.item_id}
+        stock={props.stock}
         stockOverFlag={props.stockOverFlag}
         handleModalFlag={props.handleModalFlag}
       />

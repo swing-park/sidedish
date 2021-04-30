@@ -1,5 +1,6 @@
 import * as S from "../../BestItemsStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
+
 const BestItemsCardSPrice = ({ s_price }) => {
   return (
     <S.BestItemsCardSPrice>

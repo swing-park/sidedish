@@ -7,7 +7,7 @@ import Count from "./Count/Count";
 import Prices from "./Prices/Prices";
 import RecommendedItems from "./RecommendedItems/RecommendedItems";
 import * as S from "../DetailModalStyles";
-import * as CS from "../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const DetailModalWindow = (props) => {
   const [data, setData] = useState(null);
@@ -16,20 +16,21 @@ const DetailModalWindow = (props) => {
   const [count, setCount] = useState(0);
   const [stockOverFlag, setStockOverFlag] = useState(false);
 
-  const getData = () => {
-    try {
-      fetch(props.detailUrl)
-        .then((res) => res.json())
-        .then((json) => {
-          if (json) {
-            setData(json);
-            setMainImg(json.main_image);
-          }
-        });
-    } catch (err) {
-      alert("에러가 발생했습니다");
-      setError(true);
-    }
+  const getData = (url) => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((json) => {
+        if (json.message) {
+          throw Error(json.message);
+        } else {
+          setData(json);
+          setMainImg(json.main_image);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        setError(true);
+      });
   };
 
   const handleMainImg = ({ target: { src } }) => {
@@ -53,8 +54,8 @@ const DetailModalWindow = (props) => {
   };
 
   useEffect(() => {
-    getData();
-  }, []);
+    getData(props.detailUrl);
+  }, [props.detailUrl]);
 
   if (!data || error) return null;
 
@@ -92,6 +93,7 @@ const DetailModalWindow = (props) => {
               })}
               item_id={data.item_id}
               price={data.s_price}
+              stock={data.stock}
               stockOverFlag={stockOverFlag}
               handleModalFlag={props.handleModalFlag}
             />

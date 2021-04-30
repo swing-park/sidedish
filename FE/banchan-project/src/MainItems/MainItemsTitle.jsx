@@ -1,5 +1,5 @@
 import * as S from "./MainItemsStyles";
-import * as CS from "../Styles/commonStyles.jsx";
+import * as CS from "@/Styles/commonStyles.jsx";
 
 const MainItemsTitle = ({ categoryTitle }) => {
   return (

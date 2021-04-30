@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BestItemsCardImageWrapper } from "../../BestItemsStyles";
 import BestItemsHover from "../BestItemsHover/BestItemsHover";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const BestItemsCardImage = ({
   image,

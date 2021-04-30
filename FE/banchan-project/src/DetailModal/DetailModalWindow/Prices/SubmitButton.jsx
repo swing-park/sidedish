@@ -1,9 +1,15 @@
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
-const SubmitButton = ({ count, item_id, stockOverFlag, handleModalFlag }) => {
+const SubmitButton = ({
+  count,
+  item_id,
+  stock,
+  stockOverFlag,
+  handleModalFlag,
+}) => {
   let disabledFlag = stockOverFlag;
-  if (count === 0) {
+  if (count === 0 || count > stock) {
     disabledFlag = true;
   }
 

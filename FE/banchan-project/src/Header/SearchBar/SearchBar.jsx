@@ -1,4 +1,4 @@
-import SearchButton from "../SearchBar/SearchButton";
+import SearchButton from "./SearchButton";
 import SearchInput from "./SearchInput";
 import * as S from "../HeaderStyles";
 

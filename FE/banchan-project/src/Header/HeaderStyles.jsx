@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as SearchButtonSvg } from "../Styles/icons/SearchButton.svg";
-import theme from "../Styles/theme";
+import { ReactComponent as SearchButtonSvg } from "@/Styles/icons/SearchButton.svg";
+import theme from "@/Styles/theme";
 
 const Header = styled.div`
   position: relative;
@@ -38,7 +38,7 @@ const MenuList = styled.li`
 `;
 
 const MenuWrapper = styled.div`
-  display: ${props => props._display};
+  display: ${(props) => props._display};
   padding: 16px;
   position: absolute;
   width: 112px;

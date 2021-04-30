@@ -1,5 +1,5 @@
 import * as S from "../../BestItemsStyles";
-import sortBadge from "../../../utils/sortBadges";
+import sortBadge from "@/utils/sortBadges";
 
 const BestItemsCardBadge = ({ badge }) => {
   return (

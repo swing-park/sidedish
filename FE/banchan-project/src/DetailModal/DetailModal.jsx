@@ -7,16 +7,18 @@ const DetailModal = ({
   handleModalFlag,
   handleClickCard,
 }) => {
-  return modalFlag === true ? (
-    <>
-      <DetailModalWindow
-        detailUrl={detailUrl}
-        handleModalFlag={handleModalFlag}
-        handleClickCard={handleClickCard}
-      />
-      <S.DetailModalBackground />
-    </>
-  ) : null;
+  return (
+    modalFlag && (
+      <>
+        <DetailModalWindow
+          detailUrl={detailUrl}
+          handleModalFlag={handleModalFlag}
+          handleClickCard={handleClickCard}
+        />
+        <S.DetailModalBackground />
+      </>
+    )
+  );
 };
 
 export default DetailModal;

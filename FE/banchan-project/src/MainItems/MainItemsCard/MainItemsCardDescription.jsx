@@ -1,5 +1,5 @@
 import * as S from "../MainItemsStyles";
-import * as CS from "../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const MainItemsCardDescription = ({ description }) => {
   return (

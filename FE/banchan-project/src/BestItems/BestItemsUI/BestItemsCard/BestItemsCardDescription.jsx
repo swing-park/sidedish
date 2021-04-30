@@ -1,4 +1,5 @@
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
+
 const BestItemsCardDescription = ({ description }) => {
   return (
     <>

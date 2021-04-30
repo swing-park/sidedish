@@ -4,7 +4,7 @@ import DetailBadge from "./DetailBadge";
 import DetailSPrice from "./DetailSPrice";
 import DetailNPrice from "./DetailNPrice";
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const ItemInfo = ({ data }) => {
   return (

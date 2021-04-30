@@ -1,5 +1,5 @@
 import ThumbNailsImage from "./ThumbNailsImage";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const ThumbNails = ({ thumbNails, handleMainImg }) => {
   let thumbNailsImage = new Array(5).fill("");

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import * as CS from "../Styles/commonStyles";
-import theme from "../Styles/theme";
+import * as CS from "@/Styles/commonStyles";
+import theme from "@/Styles/theme";
 
 const DetailModalWindow = styled(CS.Box.FLEX_COLUMN_BOX)`
   position: absolute;
@@ -124,7 +124,7 @@ const SubmitButton = styled.button`
   width: 440px;
   height: 58px;
 
-  background: ${props =>
+  background: ${(props) =>
     props.stockOverFlag !== true
       ? `${theme.boxColors.GREEN}`
       : `${theme.boxColors.GRAY5}`};

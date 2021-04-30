@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const ThumbNailsImage = (props) => {
   const [selectedID, setSelectedID] = useState(0);

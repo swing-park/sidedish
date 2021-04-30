@@ -1,6 +1,6 @@
 import CountNumber from "./CountNumber";
 import * as S from "../../DetailModalStyles";
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const Counter = ({ props }) => {
   return (

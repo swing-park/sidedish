@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import theme from "../Styles/theme";
+import theme from "@/Styles/theme";
 
 const BestItems = styled.div`
   width: 1440px;
@@ -60,10 +60,10 @@ const BestItemsTabTitleList = styled.li`
   line-height: 26px;
   padding: 16px 32px;
   height: 58px;
-  background: ${props =>
+  background: ${(props) =>
     props.active ? theme.boxColors.WHITE_BLUE : theme.boxColors.GRAY6};
-  font-weight: ${props => (props.active ? "bold" : "normal")};
-  color: ${props =>
+  font-weight: ${(props) => (props.active ? "bold" : "normal")};
+  color: ${(props) =>
     props.active ? theme.fontColors.GRAY1 : theme.fontColors.GRAY3};
   border-radius: 5px 5px 0px 0px;
   margin-right: 8px;

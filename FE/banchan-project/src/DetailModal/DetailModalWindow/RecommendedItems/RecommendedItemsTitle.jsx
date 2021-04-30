@@ -1,4 +1,4 @@
-import * as CS from "../../../Styles/commonStyles";
+import * as CS from "@/Styles/commonStyles";
 
 const RecommendedItemsTitle = () => {
   return (

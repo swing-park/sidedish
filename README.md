@@ -22,3 +22,6 @@
 
 <img width="1058" alt="스크린샷 2021-07-07 오전 1 19 10" src="https://user-images.githubusercontent.com/56783350/124634469-56b9be80-dec1-11eb-8f9e-d5b4d3a357f9.png">
 <img width="941" alt="스크린샷 2021-07-07 오전 1 18 55" src="https://user-images.githubusercontent.com/56783350/124634431-4dc8ed00-dec1-11eb-9229-5d18b0cdd1ab.png">
+
+## Back-end
+[notion 바로가기](https://www.notion.so/code-squad-BE-0d4771ac1b224d1f988d82542a041ca5)

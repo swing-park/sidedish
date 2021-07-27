@@ -4,8 +4,14 @@
 - FE/ Daisy Swing 
 - BE /Robin Cooper
 
+## 🖥 DEMO
+
+![127081973-cd486e88-5fc3-40c5-b0e2-b77f40a51eba](https://user-images.githubusercontent.com/56783350/127082440-09e852a1-7188-46e9-a9e3-ce82a2caec63.gif)
+
+
 ## 🖥 Web Preview
 <img width="885" alt="스크린샷 2021-07-07 오전 1 17 24" src="https://user-images.githubusercontent.com/56783350/124634250-18240400-dec1-11eb-8a90-3da70405686c.png">
+
 
 ## ⚒주요 기능 
 - 상품 조회 
